@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+
+.form {
+    background-color: #ddd;
+    padding: 25px;
+    margin: 15px auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.form .add {
+    border-color: transparent;
+    background-color: red;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+.form .input {
+    padding: 12px;
+    border-radius: 6px;
+    border-color: transparent;
+    width: calc(100% - 100px);
+}
+
+.delete-all {
+    font-size: 10px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background: red;
+    width: 80px;
+    height: 25px;
+    display: none;
+}
+
+@media (max-width: 505px) {
+    .delete-all {
+        font-size: 8px;
+        width: 100px;
+        height: 30px;
+    }
+}
+
+.tasks {
+    background-color: #ddd;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.tasks .task {
+    padding: 10px;
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+.tasks .task:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.tasks .task:hover {
+    background-color: #f7f7f7;
+}
+
+.tasks .task.done {
+    opacity: 0.5;
+}
+
+.tasks .task div {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.tasks .task span {
+    font-weight: bold;
+    font-size: 10px;
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* End Challnge */
